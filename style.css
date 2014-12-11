@@ -1,0 +1,96 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+p, blockquote,
+a, abbr, acronym, address, big, cite,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Added to prevent image margin bottom */
+img {
+	vertical-align:top;
+	}
+	
+/* CSS RESET DONE */
+
+body {color: #fff;margin: 0 auto;font-family: 'Montserrat', sans-serif;}
+body, html {height: 100%;}
+header {position: absolute;top: 30%;width:100%;}
+h1 {margin: 40px 0;-webkit-font-smoothing: antialiased;}
+
+#background {position: relative;width:100%;height:100%;overflow:hidden;}
+#b-img {position: absolute;min-width:100%;bottom:0;left:0;}
+h1.boostagrid {width:270px;margin:0 auto;text-align:left;text-transform: uppercase;font-family: 'akashiregular', sans-serif;}
+h1.boostagrid span.tagline {position:relative;font-size:42px;line-height:normal;color: #fff;}
+h1.boostagrid ul.tag-change {position: relative;font-size: 20px;display: block;text-align: left; perspective: 1110px; perspective-origin: 0 50%; margin:0; height:40px; overflow:hidden;}
+h1.boostagrid ul.tag-change li {position: absolute;top: 0;margin: 0;padding: 0;color: transparent;text-shadow: none; white-space:nowrap; backface-visibility: hidden; height: 100%;  	opacity:0; transform: rotateY(-90deg); transform-origin: 0 0 0; transition: transform 0.8s ease 0s, opacity 0.8s ease 0s; width:400px; list-style:none;}
+h1.boostagrid ul.tag-change li.active { transform: rotateY(0deg); opacity:1; }
+h1.boostagrid ul.tag-change li.bye-bye { transform: rotateY(90deg);}
+h1.boostagrid ul.tag-change li.simple { color: #7eeeb0; }
+h1.boostagrid ul.tag-change li.fast { color: #8cdaed; }
+h1.boostagrid ul.tag-change li.light { color: #f0f0f0; }
+h1.boostagrid ul.tag-change li.easy-pull { color: #e7ee93; }
+h1.boostagrid ul.tag-change li.boxes { color: #e2a2a2; }
+
+.one,.two,.three,.four,.five {background:#b3e0f5; color:#ffffff; text-shadow: 0 1px 0 #41aadb; border-radius: 2px; box-shadow:#7ec9ec 0 2px 0; }
+.half,.third,.fourth,.fifth,.sixth { padding:20px 0; text-align:center; }
+.one.transparent, .two.transparent {background:#d6eefa; border: solid 1px #b3e0f5;}
+h2 { text-align:center; color:#4aaedf; font-weight:normal; }
+.btn-holder { display:none;position:fixed; top:0; left:0; background-color:#333; z-index:1; width:146px;}
+.btn { background-color:transparent; color:#FFFFFF; font-weight:bold; clear:both; padding:10px; margin:3px; border: solid 1px #444; cursor:pointer; width:140px; }
+.download:before {position:absolute;height:80px;width:1px;left:56px;background:#fff;content: "";transform: rotate(45deg);transform-origin: 20px 20px 0;}
+.download{ background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjI4JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjQiLz4KICAgIDxzdG9wIG9mZnNldD0iMjklIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+background: -moz-linear-gradient(-45deg,  rgba(255,255,255,0.4) 28%, rgba(255,255,255,0) 29%);background: -webkit-gradient(linear, left top, right bottom, color-stop(28%,rgba(255,255,255,0.4)), color-stop(29%,rgba(255,255,255,0)));background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,0.4) 28%,rgba(255,255,255,0) 29%);background: -o-linear-gradient(-45deg,  rgba(255,255,255,0.4) 28%,rgba(255,255,255,0) 29%);background: -ms-linear-gradient(-45deg,  rgba(255,255,255,0.4) 28%,rgba(255,255,255,0) 29%);background: linear-gradient(135deg,  rgba(255,255,255,0.4) 28%,rgba(255,255,255,0) 29%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66ffffff', endColorstr='#00ffffff',GradientType=1 );position:relative;width:200px;line-height: 40px;margin-top: 150px;border:solid 1px #fff;font-size:14px;font-family:'Montserrat';transition: all 0.2s ease-out;}
+.download:hover {box-shadow: 0 0 6px #fff;}
+.download a{ display:block; color:#FFFFFF; text-decoration:none;}
+.download span { padding:0 20px;}
+pre {font-family:Arial, Helvetica, sans-serif !important;font-size:13px;line-height:24px;margin-top:40px;}
+footer{background:#31393d;color:#b3e0f5;font-size:11px;line-height:30px;text-align:center;text-shadow: 0 1px 0 #1b2022;}footer a{color:#b3e0f5;}
+@media screen and (min-width: 568px) {
+.btn-holder {display:block;}
+}
+@media screen and (min-width: 640px) {
+h1.boostagrid {width:640px;}
+h1.boostagrid span.tagline {font-size:60px;}
+h1.boostagrid ul.tag-change {font-size: 40px;overflow: visible;height: auto;}
+}
