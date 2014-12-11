@@ -1,52 +1,379 @@
 <!DOCTYPE html>
-<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>BoostaGrid - Simple Fast LightWeight</title>
+  <link href="font/akashi.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="font/octicons/octicons.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='https://highlightjs.org/static/styles/docco.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="boostagrid.css" title="default">
+  <link rel="stylesheet" href="boostagrid-2x.css" title="percentage">
+  <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <script>
+	function switch_style ( css_title )
+	{
+	  var a, b;
+	  for (a = 0, b = document.getElementsByTagName("link");
+		a < b.length ; a++ ) {
+		if ((b[a].rel.indexOf( "stylesheet" ) != -1) &&
+		  b[a].title) {
+		  b[a].disabled = true ;
+		  if (b[a].title == css_title) {
+			b[a].disabled = false ;
+		  }
+		}
+	  }
+	}
+  </script>
+ 
+</head>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Boostagrid : Boosted Grid System">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Boostagrid</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/ilbryan/BoostaGrid">View on GitHub</a>
-
-          <h1 id="project_title">Boostagrid</h1>
-          <h2 id="project_tagline">Boosted Grid System</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/ilbryan/BoostaGrid/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/ilbryan/BoostaGrid/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+<body>
+<div class="btn-holder">
+<input class="btn" type="submit" onclick="switch_style('percentage');return false;" name="theme" value="Thin Gap 2%" id="blue">
+<input class="btn" type="submit" onclick="switch_style('default');return false;" name="theme" value="Default Gap 4%" id="pink">
+</div>
+    <div id="background"><img id="b-img" src="images/back.jpg"></div>
+    <header>
+        <h1 class="boostagrid"><span class="tagline">BoostaGrid</span>
+            <ul class="tag-change" id="changer">
+              <li class="simple active">simple</li>
+              <li class="fast">fast</li>
+              <li class="light">lightweight</li>
+              <li class="easy-pull">easy pull system</li>
+              <li class="boxes">full width image boxes</li>
+            </ul>
+            <div class="download">
+        		<a href=""><span class="octicon octicon-mark-github"></span> Download</a>
+        	</div>
+        </h1>
+    </header>    
+<div class="b_grid">
+        <div class="full">
+           <h2>The Grid</h2>
+        </div>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a id="boostagrid" class="anchor" href="#boostagrid" aria-hidden="true"><span class="octicon octicon-link"></span></a>Boostagrid.</h3>
-
-<p>Simple, Fast, Lightweight with easy pull system and full width image boxes</p>
-      </section>
+<div class="b_grid">
+    <div class="one half">
+    	One Half
     </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Boostagrid maintained by <a href="https://github.com/ilbryan">ilbryan</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+    <div class="one half">
+    	One Half
     </div>
+</div>
+<div class="b_grid">
+    <div class="one third">
+    	One Third
+    </div>
+    <div class="one third">
+    	One Third
+    </div>
+    <div class="one third">
+    	One Third
+    </div>
+</div>
+<div class="b_grid">
+    <div class="one fourth">
+    	One Fourth
+    </div>
+    <div class="one fourth">
+    	One Fourth
+    </div>
+    <div class="one fourth">
+    	One Fourth
+    </div>
+    <div class="one fourth">
+    	One Fourth
+    </div>
+</div>
+<div class="b_grid">
+    <div class="one fifth">
+    	One Fifth
+    </div>
+    <div class="one fifth">
+    	One Fifth
+    </div>
+    <div class="one fifth">
+    	One Fifth
+    </div>
+    <div class="one fifth">
+    	One Fifth
+    </div>
+    <div class="one fifth">
+    	One Fifth
+    </div>
+</div>
+<div class="b_grid">
+    <div class="one sixth">
+    	One Sixth
+    </div>
+    <div class="one sixth">
+    	One Sixth
+    </div>
+    <div class="one sixth">
+    	One Sixth
+    </div>
+    <div class="one sixth">
+    	One Sixth
+    </div>
+    <div class="one sixth">
+    	One Sixth
+    </div>
+    <div class="one sixth">
+    	One Sixth
+    </div>
+</div>
+<div class="b_grid">
+<pre><code class=" hljs applescript">&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"b_grid"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one half"</span>&gt;One Half&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one half"</span>&gt;One Half&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"b_grid"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one third"</span>&gt;One Third&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one third"</span>&gt;One Third&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one third"</span>&gt;One Third&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"b_grid"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one fourth"</span>&gt;One Fourth&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one fourth"</span>&gt;One Fourth&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one fourth"</span>&gt;One Fourth&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one fourth"</span>&gt;One Fourth&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"b_grid"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one fifth"</span>&gt;One Fifth&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one fifth"</span>&gt;One Fifth&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one fifth"</span>&gt;One Fifth&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one fifth"</span>&gt;One Fifth&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one fifth"</span>&gt;One Fifth&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"b_grid"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one sixth"</span>&gt;One Sixth&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one sixth"</span>&gt;One Sixth&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one sixth"</span>&gt;One Sixth&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one sixth"</span>&gt;One Sixth&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one sixth"</span>&gt;One Sixth&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one sixth"</span>&gt;One Sixth&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+<div class="b_grid">
+	<div class="full">
+    	<h2>The Third</h2>
+    </div>
+</div>
+<div class="b_grid">
+    <div class="one third">
+    	One Third
+    </div>
+    <div class="two third">
+    	Two Third
+    </div>
+</div>
+<div class="b_grid">
+<pre><code class=" hljs applescript">&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"b_grid"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one third"</span>&gt;One Third&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"two third"</span>&gt;Two Third&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+<div class="b_grid">
+	<div class="full">
+    	<h2>The Fourth</h2>
+    </div>
+</div>
+<div class="b_grid">
+    <div class="one fourth">
+    	One Fourth
+    </div>
+    <div class="three fourth">
+    	Three Fourth
+    </div>
+</div>
+<div class="b_grid">
+    <div class="one fourth">
+    	One Fourth
+    </div>
+    <div class="two fourth">
+    	Two Fourth
+    </div>
+    <div class="one fourth">
+    	One Fourth
+    </div>
+</div>
 
-    
+<div class="b_grid">
+<pre><code class=" hljs applescript">&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"b_grid"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one fourth"</span>&gt;One Fourth&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"three fourth"</span>&gt;Three Fourth&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"b_grid"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one fourth"</span>&gt;One Fourth&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"two fourth"</span>&gt;Two Fourth&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one fourth"</span>&gt;One Fourth&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
 
-  </body>
+<div class="b_grid">
+	<div class="full">
+    	<h2>The Fifth</h2>
+    </div>
+</div>
+<div class="b_grid">
+    <div class="two fifth">
+    	Two Fifth
+    </div>
+    <div class="three fifth">
+    	Three Fifth
+    </div>
+</div>
+<div class="b_grid">
+    <div class="one fifth">
+    	One Fifth
+    </div>
+    <div class="four fifth">
+    	Four Fifth
+    </div>
+</div>
+
+<div class="b_grid">
+<pre><code class=" hljs applescript">&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"b_grid"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"two fifth"</span>&gt;Two Fifth&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"three fifth"</span>&gt;Three Fifth&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"b_grid"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one fifth"</span>&gt;One Fifth&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"four fifth"</span>&gt;Four Fifth&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+
+<div class="b_grid">
+	<div class="full">
+    	<h2>The Sixth</h2>
+    </div>
+</div>
+<div class="b_grid">
+    <div class="one sixth">
+    	One Sixth
+    </div>
+    <div class="five sixth">
+    	Five Sixth
+    </div>
+</div>
+<div class="b_grid">
+<pre><code class=" hljs applescript">&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"b_grid"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one sixth"</span>&gt;One Sixth&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"five sixth"</span>&gt;Five Sixth&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+<div class="b_grid">
+	<div class="full">
+    	<h2>Push It</h2>
+    </div>
+</div>
+<div class="b_grid">
+    <div class="one third pushed">
+    	One Third
+    </div>
+    <div class="two third pulled">
+    	Two Third
+    </div>
+</div>
+
+<div class="b_grid">
+<pre><code class=" hljs applescript"><span class="hljs-comment">&lt;!-- Small Screens Sidebar on Top --&gt;</span>
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"b_grid"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one third pushed"</span>&gt;One Third&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"two third pulled"</span>&gt;Two Third&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+
+<div class="image_grid">
+    <div class="b_grid">
+        <div class="full">
+            <h2>Full Width Image Boxes</h2>
+        </div>
+    </div>
+	<div class="image_box">
+    	<img src="http://placehold.it/500" />
+    </div>
+    <div class="image_box">
+    	<img src="http://placehold.it/500" />
+    </div>
+    <div class="image_box">
+    	<img src="http://placehold.it/500" />
+    </div>
+    <div class="image_box">
+    	<img src="http://placehold.it/500" />
+    </div>
+    <div class="image_box">
+    	<img src="http://placehold.it/500" />
+    </div>
+    <div class="image_box">
+    	<img src="http://placehold.it/500" />
+    </div>
+    <div class="image_box">
+    	<img src="http://placehold.it/500" />
+    </div>
+    <div class="image_box">
+    	<img src="http://placehold.it/500" />
+    </div>
+    <div class="image_box">
+    	<img src="http://placehold.it/500" />
+    </div>
+    <div class="image_box">
+    	<img src="http://placehold.it/500" />
+    </div>
+    <div class="image_box">
+    	<img src="http://placehold.it/500" />
+    </div>
+    <div class="image_box">
+    	<img src="http://placehold.it/500" />
+    </div>
+</div>
+
+<div class="b_grid">
+<pre><code class=" hljs applescript">&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"image_grid"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"b_grid"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"full"</span>&gt;&lt;h2&gt;Full Width Image Boxes&lt;/h2&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"image_box"</span>&gt;&lt;img src=<span class="hljs-string">"http://placehold.it/500"</span> /&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"image_box"</span>&gt;&lt;img src=<span class="hljs-string">"http://placehold.it/500"</span> /&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+    ...
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"image_box"</span>&gt;&lt;img src=<span class="hljs-string">"http://placehold.it/500"</span> /&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+
+<div class="b_grid">
+    <div class="full">
+        <h2>Nested Grids</h2>
+    </div>
+</div>
+<div class="b_grid">
+    <div class="one third transparent">
+    	<div class="one third">One Third</div>
+        <div class="two third">Two Third</div>
+    </div>
+    <div class="two third pushed transparent">
+    	<div class="one half">One Half</div>
+        <div class="one half">One Half</div>
+    </div>
+</div>
+
+<div class="b_grid">
+<pre><code class=" hljs applescript">&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"b_grid"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one third"</span>&gt;
+    	&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one third"</span>&gt;One Third&lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"two third"</span>&gt;Two Third&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"two third pushed"</span>&gt;
+    	&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one half"</span>&gt;One Half&lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"one half"</span>&gt;One Half&lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
+</div>
+
+<footer class="full">
+ Image by <a href="http://splitshire.com/" target="_blank">SplitShire</a> Font by <a href="http://tenbytwenty.com/?xxxx_posts=akashi" target="_blank">tenbytwenty</a>
+</footer>
+  <!-- Javascript -->
+  <script src="js/init.js"></script>
+</body>
 </html>
