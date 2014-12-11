@@ -1,0 +1,70 @@
+/* BOOSTAGRID 2% GAP 
+Alessandro Braga
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+*/
+
+.b_grid:before, .b_grid:after {
+    content: "";
+    display: table;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+.b_grid,.b_grid:after,.image_grid:after {
+    clear: both;
+}
+.b_grid {
+	max-width: 980px;
+	margin: 0 auto 20px;
+	width: 100%;
+	padding: 0 10px;
+}
+.one,.two,.three,.four,.five,.full,.image_grid {
+	clear:both;
+	float:none;
+	margin:0 0 10px;
+	width:100%;
+}
+.image_grid {
+	text-align: center;
+	font-size: 0; /* Prevent Margin Between Boxes */
+	}
+.image_box { 
+	width:50%;
+	display: inline-block;
+	}
+.image_box img {
+	max-width:100%;
+	height:auto !important;
+	}
+@media screen and (min-width: 568px) {
+	.one,.two,.three,.four,.five { position:relative; margin:0 0 0 2%; float:left; min-height:1px; height:auto!important; height:1px; clear:none; }
+	.full { margin:0; }
+	.image_grid { float:left;}
+	.one:first-child,.two:first-child,.three:first-child,.four:first-child,.five:first-child { margin-left:0; }
+	.one.half { width:49%; }
+	.one.third { width:32%; }
+	.two.third { width:66%; }
+	.one.fourth { width:23.5%; }
+	.two.fourth { width:49%; }
+	.three.fourth { width:74.5%; }
+	.one.fifth { width:18.4%; }
+	.two.fifth { width:38.8%; }
+	.three.fifth { width:59.2%; }
+	.four.fifth { width:79.6%; }
+	.one.sixth { width:15%; }
+	.two.sixth { width:32%; }
+	.three.sixth { width:49%; }
+	.four.sixth { width:66%; }
+	.five.sixth { width:83%; }
+	.pushed { margin-left:0!important; float:right; }
+	.pulled { margin-left:0!important; margin-right:2%; }
+	.image_box { width:25%; }
+}
+@media screen and (min-width: 1000px) {
+  .image_box { width:20%; }
+}
+@media screen and (min-width: 1280px) {
+  .b_grid { max-width: 1200px; }
+  .image_box { width:16.6666%; }
+}
