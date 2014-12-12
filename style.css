@@ -60,7 +60,7 @@ h1 {margin: 40px 0;-webkit-font-smoothing: antialiased;}
 
 #background {position: relative;width:100%;height:100%;overflow:hidden;}
 #b-img {position: absolute;min-width:100%;bottom:0;left:0;}
-h1.boostagrid {width:270px;margin:0 auto;text-align:left;text-transform: uppercase;font-family: 'akashiregular', sans-serif;}
+h1.boostagrid {width:270px;margin:0 auto;text-align:left;text-transform: uppercase;font-family: 'Orbitron', sans-serif;}
 h1.boostagrid span.tagline {position:relative;font-size:42px;line-height:normal;color: #fff;}
 h1.boostagrid ul.tag-change {position: relative;font-size: 20px;display: block;text-align: left; perspective: 1110px; perspective-origin: 0 50%; margin:0; height:40px; overflow:hidden;}
 h1.boostagrid ul.tag-change li {position: absolute;top: 0;margin: 0;padding: 0;color: transparent;text-shadow: none; white-space:nowrap; backface-visibility: hidden; height: 100%;  	opacity:0; transform: rotateY(-90deg); transform-origin: 0 0 0; transition: transform 0.8s ease 0s, opacity 0.8s ease 0s; width:400px; list-style:none;}
